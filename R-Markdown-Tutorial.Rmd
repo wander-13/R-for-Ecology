@@ -1,0 +1,59 @@
+---
+title: "R-Markdown_Tutorial"
+author: "Elin Swank"
+date: "2023-09-29"
+output: 
+  html_document:
+    theme: journal
+    highlight: espresso
+    toc: yes
+---
+
+# Hello World
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+##### Heading 6
+
+### *Italics*
+### **Bold**
+### ***Bold + Italic***
+
+1. List item 1
+2. List item 2
+3. list item 3
+
+- bullet 1
+- bullet 2
+
+* bullet 1
+* bullet 2
+
+**Add links to your document:
+[This is a Link](https://www.rforecology.com)**
+
+```{r}
+# Hello World 
+# In an R code chunk # signifies a 'comment'
+
+# My Code
+answer <- 2 + 4
+answer
+my_data<- cars
+my_data
+```
+
+Next Code Chunk:  
+Leave 2 spaces at the end of the line above in R markdown to  
+begin the next line in output.  
+How to use `plot()` function to create a scatter plot 
+```{r}
+plot(my_data$speed ~ my_data$dist)
+```
+### SessionInfo
+```{r}
+sessionInfo()
+
+```
+
